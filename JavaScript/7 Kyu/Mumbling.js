@@ -11,3 +11,10 @@ function accum(s) {
     })
     .join('-');
 }
+
+function accum(s) {
+  return s
+    .split('')
+    .map((ch, i) => ch.toUpperCase() + ch.toLowerCase().repeat(i))
+    .join('-');
+}
